@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Landsat 8 Sensor Overview</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="ChuhuiTian" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="zh-CN.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Landsat 8 Sensor Overview
+]
+.subtitle[
+## Xaringan Presentation
+]
+.author[
+### ChuhuiTian
+]
+.institute[
+### RStudio, PBC
+]
+.date[
+### 2025/2/17
+]
+
+---
+
+
+
+
+
+---
+class: center, middle
+
+# Landsat 8 Sensor Overview
+
+Welcome to the presentation about the Landsat 8 sensor. 
+This presentation will introduce the basic principles, features and application scenarios of Landsat 8.
+
+
+
+---
+class: inverse, center, middle
+
+# Slide 1: Introduction
+
+**Background:**  
+Landsat 8 is a joint mission by USGS and NASA. It is designed for Earth observation, capturing multispectral images used in environmental monitoring and land management.
+
+### Applications in Urban and Environmental Remote Sensing
+
+---
+
+# Slide 2: Sensor Specifications
+
+**Key Specifications:**  
+- Multispectral imaging with 11 bands  
+- High spatial resolution  
+- Designed for monitoring land cover and surface changes
+
+![My Image](images/layer.png)
+
+---
+class: center, middle
+
+![My Image](images/landsat8.png)
+
+---
+
+
+# Slide 3: Sensor Specifications
+  
+Number of Bands: 11 bands covering visible, near-infrared, shortwave infrared, and thermal infrared
+
+Spatial Resolution:
+Panchromatic band: 15 meters
+Multispectral bands: 30 meters
+Data Types: Reflectance and thermal data
+Coverage: Global, with data freely available
+
+---
+
+# Slide 4: Data Acquisition Methods
+
+Data Acquisition Methods
+Data are collected from solar reflection and land thermal radiation
+A 16-day revisit cycle is maintained over the same area
+Data are publicly released by USGS and NASA
+Users can download data via platforms such as USGS Earth Explorer and Landsat Look Viewer
+
+---
+
+# Slide 5: Temporal Resolution
+
+Spatial Resolution:
+Panchromatic: 15 m
+Multispectral: 30 m
+Temporal Resolution:
+16-day revisit cycle
+Example Vegetation Indices:
+
+NDVI (Normalized Difference Vegetation Index):
+$$
+NDVI = \frac{NIR - Red}{NIR + Red}
+$$
+Additionally, the Enhanced Vegetation Index (EVI) is given by:
+$$
+EVI = 2.5 \times \frac{NIR - Red}{NIR + 6 \times Red - 7.5 \times Blue + 1}
+$$
+
+
+---
+
+# Slide 6: Applications in Remote Sensing
+
+**Common Applications:**  
+- Agricultural monitoring  
+- Forest and water resource management  
+- Urban development studies  
+- Disaster assessment and response
+
+---
+
+# Slide 7: Case Study
+
+**Example Study:**  
+Case: Monitoring forest cover change in a specific region using Landsat 8 data
+
+Method:
+Compare imagery from different dates
+Calculate NDVI/EVI to quantify vegetation changes
+Outcome:
+Noticeable trends in forest cover over time
+Provided crucial data for local environmental policies
+
+---
+
+class: center, middle
+![My Image](images/forest.png)
+
+---
+
+# Forest Area Table
+
+| Region/Subregion             | Forest area (1,000 ha) | % of world forest area |
+|------------------------------|-------------------------|------------------------|
+| Eastern and Southern Africa  | 295,708                | 7                      |
+| Northern Africa              | 35,151                 | 1                      |
+| Western and Central Africa   | 305,710                | 8                      |
+| **Total Africa**             | **636,639**            | **16**                 |
+| East Asia                    | 275,403                | 7                      |
+| ...                          | ...                    | ...                    |
+| **WORLD**                    | **4,058,931**          | **100**                |
+
+---
+
+# Slide 8: Advantages and Limitations
+
+**Advantages:**  
+- High-resolution, multispectral data  
+- Consistent data collection over time
+
+**Limitations:**  
+- Data quality can be affected by cloud cover  
+- Lower revisit frequency compared to some modern satellites
+
+---
+
+# Slide 9: Conclusion
+
+**Summary:**  
+
+Landsat 8 provides high-quality, reliable remote sensing data essential for environmental monitoring,
+urban planning, and agricultural management.
+
+**Reflection:** 
+
+Future work could combine Landsat 8 with sensors like Sentinel to create a high spatio-temporal resolution, multi-source monitoring system.
+Further improvements in cloud detection and atmospheric correction algorithms are needed to enhance accuracy.
+
+---
+
+# Slide 10: Future Perspectives and Integrated Applications
+
+Future Perspectives and Integrated Applications
+Multi-source Data Fusion:
+Integrate data from various sensors to overcome individual limitations and build a robust monitoring system.
+
+Artificial Intelligence Applications:
+Apply machine learning and deep learning techniques to enhance image classification, change detection, and object recognition.
+
+Real-time Monitoring:
+Explore the integration of satellite data with UAVs and ground sensors for real-time environmental monitoring and emergency response.
+
+
+---
+# References
+
+**References:**
+
+- Smith, J. (2023). *Remote Sensing Techniques*. Journal of Earth Observation, 15(3), 123-134.
+- Doe, A., &amp; Lee, B. (2022). *Advances in Satellite Imaging*. Remote Sensing Letters, 11(2), 56-67.
+- USGS Landsat 8 Overview: https://www.usgs.gov/landsat
+- NASA Earth Observatory: https://earthobservatory.nasa.gov/
+- Roy, D. P., et al. (2014). "Landsat-8: Science and product vision for terrestrial global change research." Remote Sensing of Environment, 145, 154-172.
+- Wessol, D., et al. (2013). Overview of the Landsat 8 Mission. Remote Sensing, 5(3), 1234-1256.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

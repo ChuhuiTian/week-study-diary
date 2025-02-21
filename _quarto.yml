@@ -1,0 +1,84 @@
+project:
+  type: book
+
+book:
+  title: "Week 1 study diary"
+  author: "Chuhui Tian"
+  date: "2025/2/17"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
+---
+
+Week 1: Introduction to Remote Sensing
+
+# Introduction
+
+Welcome to my Week 1 learning diary! In this Quarto document, I will:
+- Summarize what I learned in the first week of the Remotely Sensing Cities and Environments course.
+- Reflect on the basic concepts of remote sensing and R Markdown tools.
+- Embed my Xaringan presentation, which is deployed on GitHub Pages.
+
+---
+
+# Summary
+
+This week’s lecture provided an engaging introduction to remote sensing, covering its fundamental principles, historical evolution, and its critical applications in urban and environmental studies. Remote sensing is a powerful tool that allows for the collection and analysis of data about Earth's surface without physical contact. We explored different types of sensors, such as optical, thermal, and radar, and examined how data is acquired through satellites like Landsat and Sentinel. A significant discussion revolved around comparing these datasets, analyzing their spatial, temporal, and spectral resolutions to understand their respective advantages and limitations.
+
+In the practical session, I worked with Sentinel-2 data to examine a selected urban area. The process involved downloading and preprocessing the imagery, applying basic raster analysis, and interpreting spectral information to assess land cover types. One of the most interesting aspects was the use of the Normalized Difference Vegetation Index (NDVI) to assess vegetation health, which demonstrated how remote sensing techniques can be employed for environmental monitoring. Additionally, we explored the limitations of different sensor types, such as the effects of atmospheric interference on optical remote sensing and how radar systems can overcome some of these challenges. This hands-on exercise helped me grasp how remote sensing data can be manipulated and visualized, reinforcing the theoretical concepts discussed in the lecture.
+
+---
+
+# Applications
+
+Remote sensing plays a crucial role in urban analysis, environmental monitoring, and disaster response. For example, researchers have successfully used satellite imagery to track urban expansion and assess changes in land use over time. One case study discussed in class demonstrated how remote sensing can be applied to monitor urban heat islands, with Smith et al. (2023) showing a direct correlation between land cover types and temperature variations. Additionally, disaster management studies such as Johnson and Lee (2024) have utilized remote sensing techniques to model flood risk areas and assess the impact of extreme weather events.
+
+During my own exploration, I considered how remote sensing could be used for monitoring urban green spaces, an aspect of increasing importance in sustainable city planning. By analyzing vegetation indices derived from Sentinel-2 data, we can estimate changes in urban greenery and evaluate policies aimed at enhancing urban sustainability. Another interesting application is in air quality monitoring. For instance, remote sensing data can be used to detect atmospheric pollutants, such as NO2 and SO2, which are critical for understanding urban air pollution patterns and informing policy interventions. In policy-making, remote sensing has been instrumental in tracking deforestation and implementing conservation efforts, such as those undertaken by organizations monitoring the Amazon rainforest.
+
+---
+
+# Reflection
+
+Engaging with remote sensing from both a theoretical and practical perspective has given me a deeper appreciation for its real-world applications. The ability to analyze changes over time using satellite data provides invaluable insights into urban dynamics and environmental sustainability. However, I also realized the technical challenges involved, including the complexities of data preprocessing and the necessity of specialized software for analysis. One aspect I found particularly challenging was distinguishing between different land cover types solely through spectral signatures, as many materials can have similar reflectance characteristics. This highlights the importance of advanced classification techniques, such as machine learning and deep learning, in improving accuracy.
+
+One question I found particularly intriguing was how remote sensing data could be integrated with GIS-based urban planning models to support decision-making processes. Additionally, I am interested in exploring machine learning techniques for automating land cover classification, which could make the process more efficient and accurate. Remote sensing data fusion, where multiple sources of data (e.g., optical, radar, and LiDAR) are combined to enhance analysis, is another area I would like to delve into further.
+
+Moving forward, I aim to refine my skills in data interpretation and learn more about advanced remote sensing techniques that could be applicable in my future research within urban sustainability and spatial data science. I also plan to experiment with different software tools, such as Google Earth Engine and QGIS, to enhance my technical proficiency. Overall, this first week has been both insightful and challenging, and I am excited to continue exploring the role of remote sensing in spatial data science and urban planning.
+
+---
+# 3. Embedding the Xaringan Presentation
+
+Below is my Xaringan presentation, which is hosted on GitHub at:  
+[https://github.com/ChuhuiTian/Xaringan-Presentation.git](https://github.com/ChuhuiTian/Xaringan-Presentation.git)
+
+
+```{r}
+# Make sure the xaringanExtra package is installed and loaded
+# install.packages("xaringanExtra")
+library(xaringanExtra)
+
+xaringanExtra::embed_xaringan(
+  url = "https://chuhuitian.github.io/Xaringan-Presentation/", 
+  ratio = "16:9"
+)
+
+# 4. conclusion
+
+Week 1 provided a strong foundation in remote sensing and the tools needed for creating and sharing interactive presentations.
+I look forward to applying these skills in the coming weeks to build more complex analyses and presentations.
+
