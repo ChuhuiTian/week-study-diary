@@ -1,0 +1,177 @@
+---
+title: "week 3 study diary"
+author: "chuhui tian"
+date: "2025/02/20"
+
+---
+
+# Week 3 Learning Diary
+
+This week, I delved into the fundamental corrections and enhancement techniques for remote sensing imagery. The focus was on atmospheric correction using the Dark Object Subtraction (DOS) method, converting Digital Numbers (DN) to radiance and reflectance, as well as data pre-processing tasks like mosaicking and cropping. In addition, I explored various image enhancement techniques such as spectral ratioing, spatial filtering, texture analysis, data fusion, and Principal Component Analysis (PCA). This learning diary documents my process, insights, and the reproducible R code I used throughout.
+
+---
+
+## 1. Resources and References
+
+The following resources were key to this week’s work:
+- **Joyce, K. (2013):** [Radiative Transfer and Atmospheric Correction Video](https://www.youtube.com)
+- **Jensen, J.R. (2015):** *Introductory Digital Image Processing: A Remote Sensing Perspective.*
+- **Schulte et al. (2018):** [Integrating multispectral and radar imagery for biodiversity monitoring](https://doi.org)
+- **Landsat 7 Data Users Handbook:** For radiance-to-reflectance conversion.
+- Various R packages and tutorials (e.g., `terra`, `RStoolbox`, `tidyverse`, `GLCMTextures`).
+
+---
+
+## 2. Atmospheric Correction
+
+### 2.1 Dark Object Subtraction (DOS)
+
+The DOS method assumes that the darkest pixel in an image should ideally have zero reflectance. In practice, the darkest areas have a small non-zero value (often approximated as 1% reflectance) due to atmospheric scattering. This value is subtracted from every pixel to correct for the haze.
+
+The correction formula is:
+
+\[
+\rho_{\lambda} = \frac{(L_{\text{sat\_rad}} - L_{\text{haze1\%}_{\text{rad}}}) \cdot \pi \cdot d^2}{EO_{\lambda} \cdot \cos\theta_S \cdot TAUv + TAUz}
+\]
+
+where:
+- \(L_{\text{sat\_rad}}\) is the at-sensor radiance.
+- \(L_{\text{haze1\%}_{\text{rad}}}\) is the haze radiance (estimated from the darkest pixel minus 1% of total radiance).
+- \(EO_{\lambda}\) (or \(ESUN_{\lambda}\)) is the exoatmospheric irradiance.
+- \(\theta_S\) is the solar zenith angle.
+- \(d\) is the Earth-Sun distance.
+- \(TAUv\) and \(TAUz\) are sensor-specific calibration factors.
+
+### 2.2 Radiance to Reflectance Conversion
+
+Another approach converts DN to at-sensor radiance and then to top-of-atmosphere (TOA) reflectance:
+
+\[
+\rho = \frac{\pi L_{\lambda} d^2}{ESUN_{\lambda} \cos\theta_S}
+\]
+
+This method provides a first-order correction and is often the basis for more complex atmospheric corrections.
+
+---
+
+## 3. Data Access and Pre-processing
+
+### 3.1 Acquiring and Reading Data
+
+Landsat Level-1 DN data are downloaded from USGS Earth Explorer, and the corresponding MTL file provides metadata (solar angle, Earth-Sun distance, etc.). In R, we use packages such as `terra` and `RStoolbox` to read and process these data.
+
+```{r}
+library(terra)
+library(RStoolbox)
+library(tidyverse)
+
+# Example: Read metadata and stack Landsat bands using a provided MTL file
+mtlFile <- "data/LC08_L1TP_175083_20211005_MTL.txt"  # Adjust path as needed
+metaData <- readMeta(mtlFile)
+lsatMeta <- stackMeta(metaData)
+
+# Apply DOS atmospheric correction
+l8_boa_ref <- radCor(lsatMeta, metaData, method = "dos")
+plot(l8_boa_ref, main = "DOS Corrected Landsat Image")
+
+3.2 Merging Imagery
+Often, a single tile does not cover the entire study area. Hence, multiple tiles must be mosaicked.
+
+# List Landsat tile files (for Landsat 8 and 9)
+listlandsat_8 <- dir("data/Lsat8", pattern = "[B123456790].TIF", full.names = TRUE)
+listlandsat_9 <- dir("data/Lsat9", pattern = "[1B23456790].TIF", full.names = TRUE)
+
+# Load and mosaic the images
+landsat8 <- rast(listlandsat_8)
+landsat9 <- rast(listlandsat_9)
+mosaic_image <- mosaic(landsat8, landsat9, fun = "mean")
+plot(mosaic_image, main = "Mosaicked Landsat Image")
+3.3 Cropping to a Study Area
+A shapefile is used to clip the mosaicked image to focus on the study area, which also helps reduce processing time.
+
+---
+
+library(sf)
+
+# Read the study area shapefile and reproject to match the image CRS
+study_area <- st_read("data/study_area.shp") %>% st_transform(crs(mosaic_image))
+mosaic_cropped <- crop(mosaic_image, study_area) %>% mask(study_area)
+plot(mosaic_cropped, main = "Cropped Study Area")
+
+---
+4. Image Enhancement Techniques
+4.1 Spectral Ratioing (NDVI)
+NDVI (Normalized Difference Vegetation Index) highlights vegetation by comparing near-infrared (NIR) and red bands:
+$$
+NDVI = \frac{NIR - Red}{NIR + Red}
+$$
+
+
+
+ 
+For Landsat 8, Band 5 is NIR and Band 4 is Red.
+
+
+# Calculate NDVI
+ndvi <- (mosaic_cropped$B5 - mosaic_cropped$B4) / (mosaic_cropped$B5 + mosaic_cropped$B4)
+plot(ndvi, main = "NDVI")
+4.2 Spatial Filtering
+Spatial filtering, such as applying a Laplacian filter, enhances edges and subtle features in the imagery.
+
+
+# Apply a 3x3 Laplacian filter on Band 4
+laplacian_filter <- matrix(c(0, 1, 0, 1, -4, 1, 0, 1, 0), nrow = 3)
+filtered_image <- focal(mosaic_cropped$B4, w = laplacian_filter)
+plot(filtered_image, main = "Laplacian Filter on Band 4")
+4.3 Texture Analysis
+Texture measures based on the Gray Level Co-occurrence Matrix (GLCM) can reveal spatial variations not evident from spectral data alone.
+
+
+library(GLCMTextures)
+
+# Scale the image data appropriately (using example scale factors)
+scaled_image <- (mosaic_cropped * 0.0000275) + (-0.2)
+textures <- glcm_textures(scaled_image$B4, 
+                          w = c(7, 7), 
+                          n_levels = 4, 
+                          quant_method = "range",
+                          shift = list(c(1, 0), c(1, 1), c(0, 1), c(-1, 1)),
+                          metrics = "glcm_homogeneity")
+plot(textures, main = "Texture Analysis (Homogeneity)")
+
+4.4 Data Fusion and PCA
+Combining spectral and texture data can enhance information content. PCA is then applied to reduce dimensionality while retaining key variance.
+
+
+# Fuse the original image with the texture measure
+fused_data <- c(mosaic_cropped, textures)
+
+# Convert the fused data to a data frame and remove NA values
+fused_df <- as.data.frame(fused_data, na.rm = TRUE)
+pca_result <- prcomp(fused_df, center = TRUE, scale. = TRUE)
+summary(pca_result)
+
+---
+
+5. Learning Diary and Reflections
+During this week, I experienced the following:
+
+# Atmospheric Correction:
+Understanding the DOS method and the importance of parameters such as the solar zenith angle and the 1% reflectance threshold was challenging but essential. Fine-tuning these parameters proved critical in achieving accurate image correction.
+
+# Data Pre-processing:
+Mosaicking and cropping multiple Landsat tiles reinforced the importance of spatial alignment and reprojection. These steps are fundamental in ensuring that the resulting dataset is both comprehensive and manageable.
+
+# Enhancement Techniques:
+Computing NDVI, applying spatial filters, and performing texture analysis helped me to visualize and emphasize different landscape features. Data fusion followed by PCA provided a powerful means to reduce redundancy and highlight the primary components of variability within the dataset.
+
+# Challenges and Future Directions:
+Managing large datasets and ensuring compatibility among various R packages were some of the challenges encountered. Moving forward, I plan to explore more sophisticated data fusion techniques and integrate machine learning-based classification methods to further advance my remote sensing analysis skills.
+
+---
+
+6. Conclusion
+This week’s exercises offered a comprehensive overview of the remote sensing processing workflow—from acquiring raw data and performing atmospheric correction to enhancing imagery through various techniques. The hands-on experience with R has not only strengthened my theoretical understanding but also enabled me to develop reproducible workflows for processing Landsat data.
+
+I look forward to applying these skills to real-world scenarios and further expanding my expertise in remote sensing analysis.
+---
