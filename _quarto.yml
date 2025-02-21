@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Week study diary"
+  author: "Norah Jones"
+  date: "2025/2/21"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
