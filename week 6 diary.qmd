@@ -1,0 +1,25 @@
+---
+title: "week 6 diary"
+author: "Chuhui Tian"
+date: "2025-03-06"
+format: html
+editor: visual
+---
+
+# Week 6 study diary
+
+## Summary
+
+This week focused extensively on image classification using Sentinel-2 satellite data through Google Earth Engine (GEE). I learned to prepare and process satellite images specifically for land cover classification, beginning with loading vector data (FAO GAUL) to define the study area clearly—Shenzhen, in this case. I practiced data pre-processing, including cropping imagery to the region of interest and dealing with cloud coverage, which significantly affects data accuracy. Two distinct approaches to cloud masking were explored: filtering entire collections by low cloud cover percentages and applying pixel-based quality assurance masks.
+
+Further, the practical work involved creating and managing training data for supervised classification models, particularly random forests. Through splitting datasets into training and test subsets, I could evaluate the classification accuracy, emphasizing the practical importance of methodological rigor in remote sensing projects. This reinforced the necessity of meticulous data handling to ensure accurate thematic mapping, crucial for applications in urban planning, environmental management, and disaster response.
+
+## Applications:
+
+Remote sensing image classification techniques, such as those explored this week, are widely applied in urban planning, agricultural monitoring, and environmental management. The Sentinel-2 satellite data, due to its accessibility and high spatial resolution, is extensively used in recent literature to study urban sprawl, land use change, and vegetation dynamics. For instance, Pal and Mather (2005) demonstrate the robustness of support vector machines in classifying remote sensing data, which provided context for understanding the comparative efficiency of random forests discussed in class.
+
+Additionally, Jensen (2015) outlines the broader context of supervised and unsupervised classification methods, illustrating their practical applications in thematic map accuracy assessments. Recent advancements, highlighted in cloud-based remote sensing platforms like GEE (as discussed in the literature from GISGeography and Barsi et al.), underscore the transformative impact of cloud computing on image classification efficiency and scalability. This combination of theoretical understanding and practical application demonstrates the importance of selecting appropriate methods and data quality checks, especially cloud management, to achieve reliable classification results.
+
+## Reflection:
+
+This week's practical experience significantly enhanced my understanding of the technical intricacies involved in remote sensing classification. I found particularly interesting how cloud cover, a seemingly minor detail, could drastically influence the outcomes of satellite imagery analyses. Learning practical solutions such as cloud masking significantly boosted my confidence in handling real-world satellite data challenges. Considering my future goals in urban sustainability, understanding these methodological challenges and capabilities is invaluable. Although Sentinel-2 data and classification techniques might not always directly apply, the general principles of careful data preparation and analysis I gained are broadly applicable. This week has solidified my appreciation for meticulous methodological planning in remote sensing projects.

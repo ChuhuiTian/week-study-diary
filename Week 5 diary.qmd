@@ -7,7 +7,6 @@ editor: visual
 
 # Advanced Remote Sensing Correction and Enhancement Learning Diary (Week 5)
 
-This document presents an in depth exploration of remote sensing data pre-processing and enhancement techniques, building upon the concepts from the [CASA0023 Corrections](https://andrewmaclachlan.github.io/CASA0023/3_corrections.html) course material. In this diary, I integrate theoretical knowledge with my own experimental process—including atmospheric correction using Dark Object Subtraction (DOS), radiance-to-reflectance conversion, image mosaicking, spatial filtering, texture analysis, data fusion, and principal component analysis (PCA).
 
 ---
 
