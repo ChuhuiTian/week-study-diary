@@ -7,7 +7,6 @@ editor: visual
 
 # Advanced Remote Sensing Correction and Enhancement Learning Diary (Week 5)
 
-
 ## 1. Learning Objectives
 
 -   **Theoretical Understanding:**
@@ -63,9 +62,8 @@ In my experiment, I performed the following steps:
 
 I began by loading a Landsat 8 scene and its associated MTL file, then applied the DOS correction using R.
 
-
-
 ## Part 4:
+
 Reflection and Future Work Reflection Workflow Integration: This exercise demonstrates the integration of cloud-based data export from GEE with local processing in R. Although I lacked the standard metadata file, I adapted by manually defining calibration parameters and using a custom DOS correction function.
 
 Challenges: The main challenge was handling the absence of the standard MTL file. This required manually specifying parameters, which may not be as precise as using a fully calibrated MTL file.
