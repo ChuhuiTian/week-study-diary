@@ -212,51 +212,51 @@
   {
     "objectID": "week 5 diary.html",
     "href": "week 5 diary.html",
-    "title": "7  Week 5 study diary",
+    "title": "7  week 5 study diary",
     "section": "",
     "text": "8 Advanced Remote Sensing Correction and Enhancement Learning Diary (Week 5)",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 5 study diary</span>"
     ]
   },
   {
     "objectID": "week 5 diary.html#learning-objectives",
     "href": "week 5 diary.html#learning-objectives",
-    "title": "7  Week 5 study diary",
+    "title": "7  week 5 study diary",
     "section": "8.1 1. Learning Objectives",
     "text": "8.1 1. Learning Objectives\n\nTheoretical Understanding:\n\nDeeply understand the principles behind Dark Object Subtraction (DOS) for atmospheric correction.\n\nGrasp the conversion process from Digital Number (DN) to radiance and then to apparent (or bottom-of-atmosphere) reflectance, including key parameters like solar zenith angle and Earth–Sun distance.\n\nData Pre-processing:\n\nMaster reading and processing Landsat data using R packages such as terra, RStoolbox, and tidyverse.\n\nLearn advanced techniques like image mosaicking, cropping, and masking to create a uniform dataset for analysis.\n\nImage Enhancement & Analysis:\n\nApply spectral indices (e.g., NDVI) to highlight vegetation features.\n\nUse spatial filtering (e.g., Laplacian filter) and texture analysis (via GLCM) to extract additional information from the imagery.\n\nCombine spectral and texture data through data fusion and reduce dimensionality using PCA.\n\nExperimental Process:\n\nDocument my own experimental approach to processing, analyzing, and interpreting remote sensing data, and reflect on challenges and insights.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 5 study diary</span>"
     ]
   },
   {
     "objectID": "week 5 diary.html#theoretical-background-formulas",
     "href": "week 5 diary.html#theoretical-background-formulas",
-    "title": "7  Week 5 study diary",
+    "title": "7  week 5 study diary",
     "section": "8.2 2. Theoretical Background & Formulas",
     "text": "8.2 2. Theoretical Background & Formulas\n\n8.2.1 2.1 DOS Atmospheric Correction\nThe Dark Object Subtraction (DOS) method assumes that the darkest pixel in an image should ideally have zero reflectance. In practice, due to atmospheric scattering, even the darkest areas exhibit a small non-zero value (typically approximated as 1% reflectance). The correction formula is:\n\\[\n\\rho_{\\lambda} = \\frac{(L_{\\text{sat}} - L_{\\text{haze1\\%}}) \\cdot \\pi \\cdot d^2}{ESUN_{\\lambda} \\cdot \\cos \\theta_S \\cdot TAUv + TAUz}\n\\]\nWhere:\n- (L_{}) is the at-sensor radiance.\n- (L_{}) is the radiance attributable to atmospheric haze (estimated using the darkest pixel minus 1% reflectance).\n- (ESUN_{}) is the exoatmospheric solar irradiance for the band.\n- (d) is the Earth–Sun distance.\n- (_S) is the solar zenith angle.\n- (TAUv) and (TAUz) are sensor-specific calibration coefficients (often set as 1 and (_S), respectively).\n\n\n8.2.2 2.2 NDVI Computation\nThe Normalized Difference Vegetation Index (NDVI) is computed to assess vegetation cover and health:\n\\[\nNDVI = \\frac{NIR - Red}{NIR + Red}\n\\]\nFor Landsat 8, Band 5 represents the Near-Infrared (NIR) and Band 4 the Red spectral region.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 5 study diary</span>"
     ]
   },
   {
     "objectID": "week 5 diary.html#experimental-process-code-implementation",
     "href": "week 5 diary.html#experimental-process-code-implementation",
-    "title": "7  Week 5 study diary",
+    "title": "7  week 5 study diary",
     "section": "8.3 3. Experimental Process & Code Implementation",
     "text": "8.3 3. Experimental Process & Code Implementation\nIn my experiment, I performed the following steps:\n\n8.3.1 3.1 Data Reading & Atmospheric Correction\nI began by loading a Landsat 8 scene and its associated MTL file, then applied the DOS correction using R.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 5 study diary</span>"
     ]
   },
   {
     "objectID": "week 5 diary.html#part-4",
     "href": "week 5 diary.html#part-4",
-    "title": "7  Week 5 study diary",
+    "title": "7  week 5 study diary",
     "section": "8.4 Part 4:",
     "text": "8.4 Part 4:\nReflection and Future Work Reflection Workflow Integration: This exercise demonstrates the integration of cloud-based data export from GEE with local processing in R. Although I lacked the standard metadata file, I adapted by manually defining calibration parameters and using a custom DOS correction function.\nChallenges: The main challenge was handling the absence of the standard MTL file. This required manually specifying parameters, which may not be as precise as using a fully calibrated MTL file.\nLessons Learned: Always verify that the file paths and metadata requirements match the function expectations. When metadata is missing, a manual workaround is possible but requires careful validation.\nFuture Work Refinement: I plan to compare my custom correction results with those obtained using a full MTL file (if available) to refine the parameter settings.\nAdvanced Analysis: Further analysis, such as computing NDVI for vegetation monitoring and incorporating time-series data, will be explored.\nAutomation: Automating the process (e.g., integrating Earth Engine exports with local R processing via scripts) will be a goal for future improvements.\nConclusion This chapter has documented my workflow for processing Landsat 8 Surface Reflectance data without a standard MTL file, using a custom DOS correction method in R. The approach shows how to manually handle calibration parameters and adapt processing workflows when metadata is not available. I look forward to refining these techniques and incorporating more advanced analyses in future work. —",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 5 study diary</span>"
     ]
   },
   {

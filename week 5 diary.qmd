@@ -1,5 +1,5 @@
 ---
-title: "Week 5 study diary"
+title: "week 5 study diary"
 author:  "Chuhui Tian"
 format: html
 editor: visual
