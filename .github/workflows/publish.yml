@@ -1,4 +1,4 @@
-name: Publish Quarto Book
+name: Deploy Quarto Book to GitHub Pages
 
 on:
   push:
@@ -11,8 +11,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 1.4.550
 
       - name: Render Quarto Project
         run: quarto render
