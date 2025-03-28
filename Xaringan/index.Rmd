@@ -197,5 +197,5 @@ Explore the integration of satellite data with UAVs and ground sensors for real-
 - USGS Landsat 8 Overview: https://www.usgs.gov/landsat
 - NASA Earth Observatory: https://earthobservatory.nasa.gov/
 - Roy, D. P., et al. (2014). "Landsat-8: Science and product vision for terrestrial global change research." Remote Sensing of Environment, 145, 154-172.
-- Wessol, D., et al. (2013). Overview of the Landsat 8 Mission. Remote Sensing, 5(3), 1234-1256.
+- Wessol, D., et al. (2013). Overview of the Landsat 8 Mission. Remote Sensing, 5(3), 1234-1256..
 
