@@ -9,7 +9,7 @@ Hello, I am Chuhui Tian, a student dedicated to the study and research of remote
 
 ## My Background
 
-I have a background in [Your Field or Background] and am passionate about data analysis and spatial information technology. Remote sensing is an essential tool for environmental monitoring, urban planning, and resource management, offering precise data to support informed decision-making.
+I have a background in UCL studying in Urban Spacial Sicence and am passionate about data analysis and spatial information technology. Remote sensing is an essential tool for environmental monitoring, urban planning, and resource management, offering precise data to support informed decision-making.
 
 ## Learning Objectives
 
@@ -18,4 +18,6 @@ I have a background in [Your Field or Background] and am passionate about data a
 - **Literature Engagement:** Read and critically evaluate relevant literature to form a deep and unique perspective on remote sensing applications.
 - **Knowledge Sharing:** Utilize the Quarto platform to create a dynamic, interactive learning diary that facilitates knowledge sharing and academic exchange.
 
-I hope this diary not only consolidates my knowledge but also serves as a valuable resource for peers and others interested in remote sensing technology. Let's learn and grow together!
+I hope this diary not only consolidates my knowledge but also serves as many resource for peers and others interested in remote sensing technology. Let's learn and grow together!
+
+---

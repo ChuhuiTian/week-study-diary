@@ -1,4 +1,62 @@
 # References {.unnumbered}
 
-::: {#refs}
-:::
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Pal, M. and Mather, P.M., 2005. 'Support vector machines for classification in remote sensing', International Journal of Remote Sensing, 26(5), pp. 1007-1011.
+
+ulder, M.A., Masek, J.G., Cohen, W.B., Loveland, T.R. and Woodcock, C.E., 2012. 'Landsat continuity: Issues and opportunities for land cover monitoring', Remote Sensing of Environment, 122, pp. 122-131.
+
+Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A. and Cheng, J., 2019. R Markdown: The Definitive Guide. Boca Raton, FL: Chapman and Hall/CRC.
+
+Knuth, D.E., 1984. Literate Programming. Stanford, CA: Center for the Study of Language and Information.
+
+Wickham, H., 2014. Advanced R. Boca Raton, FL: Chapman and Hall/CRC.
+
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Jensen, J. R. (2015). Introductory Digital Image Processing: A Remote Sensing Perspective. Prentice Hall.
+
+Schulte, H., & colleagues. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849–865. https://doi.org/10.1111/2041-210X.13025
+
+Regulations on the Application of Remote Sensing Satellites in China. (n.d.). Retrieved from National Remote Sensing Center Website (Note: Update the URL and publication year if available.)
+
+Shanghai Urban Planning Management Regulations. (n.d.). Retrieved from Shanghai Municipal Government Website (Note: Update the URL and publication year if available.)
+
+European Space Agency. (n.d.). Sentinel missions. Retrieved from https://www.esa.int/Our_Activities/Observing_the_Earth/Sentinel-1
+
+United States Geological Survey. (n.d.). Landsat Satellite Imagery. Retrieved from https://landsat.usgs.gov
+
+National Remote Sensing Center. (n.d.). Retrieved from http://www.nrscc.gov.cn
+
+
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Pal, M. and Mather, P.M., 2005. 'Support vector machines for classification in remote sensing', International Journal of Remote Sensing, 26(5), pp.1007–1011.
+
+Foody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.
+
+Richards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.
+
+Lu, D. and Weng, Q., 2007. 'A survey of image classification methods and techniques for improving classification performance', International Journal of Remote Sensing, 28(5), pp.823–870.
+
+Tso, B. and Mather, P.M., 2009. Classification Methods for Remotely Sensed Data. Boca Raton, FL: CRC Press.
+
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Richards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.
+
+Foody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.
+
+Verbesselt, J., Hyndman, R., Newnham, G. and Culvenor, D., 2010. 'Detecting trend and seasonal changes in satellite image time series', Remote Sensing of Environment, 114(1), pp.106–115.
+
+Lu, D. and Weng, Q., 2007. 'A survey of image classification methods and techniques for improving classification performance', International Journal of Remote Sensing, 28(5), pp.823–870.
+
+Zhu, Z. and Woodcock, C.E., 2012. 'Object-based cloud and cloud shadow detection in Landsat imagery', Remote Sensing of Environment, 118, pp.83–94.

@@ -1,0 +1,442 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Weekly Study diary",
+    "section": "",
+    "text": "1 Welcome\nWelcome to my Weekly Study Diary!\nThis book chronicles my learning journey in the fields of remote sensing and Geographic Information Systems (GIS), featuring weekly theoretical summaries, practical applications, and personal reflections.\nPlease use the navigation sidebar or the links below to explore the chapters and learn more about each week’s content. If you are interested in a specific topic, feel free to click on the corresponding diary entry.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>My Learning Diary Book</span>"
+    ]
+  },
+  {
+    "objectID": "week 3 diary.html",
+    "href": "week 3 diary.html",
+    "title": "5  week 3 study diary",
+    "section": "",
+    "text": "6 Week 3 study diary",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week 3 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 3 diary.html#applications",
+    "href": "week 3 diary.html#applications",
+    "title": "5  week 3 study diary",
+    "section": "6.2 Applications",
+    "text": "6.2 Applications\nIn the third week of the course, the methods studied are widely applicable in the fields of environmental monitoring and urban planning. To illustrate this, one of the applications of radiometric calibration is the accommodation of the reflectance values in the satellite images to the surface materials. This becomes essential in case of detection of a subtle change in terms of the land cover or vegetation with the use of different time periods or sensors in the satellite images (Jensen, 2015). Compared to other correction methods, atmospheric correction is more specific because it enables the removal of distortions induced by particles and moisture in the atmosphere, a prerequisite for precision agriculture and water resource management.\nIn addition to that, the geometric rectification satellite images must be aligned well, which only can be done if there is a geographic map showing the ground coordinates. In order to achieve accuracy of in the process of land cover classification and change detection, these preprocessing steps have been successfully integrated in various studies. Through this week, not only the quality of remote sensing data improved but also contributed to decision processes in some areas like disaster responses and urban development.\nReflection\nAmong the many aspects that stood out to me in Week 3, I hold the notion that input data inevitably carries the quality of output data. Having acquired for myself the proficiency in image processing and correction methods through hands-on experiments, I was given the opportunity to understand the subtleties of preparing satellite images for a more advanced analysis. Consequently, I have come to perceive the fact that even the tiniest calibration defaults and corrections of the data may eventually affect the subsequent analytical results in a significant way. The later conviction encourages me to be more detailed in my mission in the future. The week has undoubtedly contributed to my realization that I am able to confidently work with the raw satellite data and I am very much inclined to employ my upgraded abilities for the resolution of more intricate analytical tasks within a short period.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week 3 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 3 diary.html#references",
+    "href": "week 3 diary.html#references",
+    "title": "5  week 3 study diary",
+    "section": "6.3 References",
+    "text": "6.3 References\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week 3 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 4 diary.html",
+    "href": "week 4 diary.html",
+    "title": "6  week 4 study diary",
+    "section": "",
+    "text": "7 City Case Study: Integrating Remote Sensing Data and Policy Implementation in Shanghai\nThis document presents a comprehensive case study on Shanghai, focusing on how remote sensing data can be strategically applied to meet policy objectives. It delves into the interplay between national and local policies, the technical methodologies used to process remote sensing imagery, and the broader implications for urban management and sustainable development.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week 4 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 4 diary.html#abstract",
+    "href": "week 4 diary.html#abstract",
+    "title": "6  week 4 study diary",
+    "section": "7.1 1. Abstract",
+    "text": "7.1 1. Abstract\nShanghai, a global megacity at the forefront of urbanization, faces multifaceted challenges including environmental degradation, rapid land use change, and disaster vulnerability. In response, both central and local governments have formulated rigorous policies such as the “Regulations on the Application of Remote Sensing Satellites in China” and the “Shanghai Urban Planning Management Regulations”.\nThis study provides a dual-focused abstract:\n- Policy Overview: A critical summary of the aforementioned regulations, emphasizing mandates for data openness, stringent quality control, and the integration of remote sensing technology in public decision-making.\n- City Profile: An analysis of Shanghai’s current urban dynamics—ranging from environmental monitoring needs to infrastructure planning and emergency response strategies.\nThrough advanced pre-processing and analysis of multispectral satellite imagery, this case study illustrates how remote sensing data underpins policy objectives and supports sustainable urban development in Shanghai.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week 4 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 4 diary.html#application-leveraging-remote-sensing-data-to-fulfill-policy-objectives",
+    "href": "week 4 diary.html#application-leveraging-remote-sensing-data-to-fulfill-policy-objectives",
+    "title": "6  week 4 study diary",
+    "section": "7.2 2. Application: Leveraging Remote Sensing Data to Fulfill Policy Objectives",
+    "text": "7.2 2. Application: Leveraging Remote Sensing Data to Fulfill Policy Objectives\n\n7.2.1 2.1 Data Acquisition and Advanced Pre-processing\nTo align with policy imperatives, a robust remote sensing workflow was established:\n- Data Sources:\n- Open-access datasets from the Sentinel and Landsat missions, ensuring high temporal and spatial resolution.\n- Supplementary datasets from the National Remote Sensing Center to enrich the analysis.\n- Pre-processing Steps:\n- Atmospheric Correction: Implementing the Dark Object Subtraction (DOS) method to remove atmospheric scattering. For example, by calculating the 1% reflectance threshold from the darkest pixel, we obtain a corrected image that is closer to true surface reflectance.\n- Geometric Correction and Mosaicking: Multiple image tiles are geometrically corrected and mosaicked to create a seamless composite of the urban region.\n- Clipping and Masking: The composite image is then clipped using a high-precision shapefile of Shanghai’s administrative boundaries to ensure a focused analysis.\n\n\n7.2.2 2.2 Case Applications in Shanghai\nA. Environmental Monitoring and Urban Heat Island Analysis Objective: Monitor urban vegetation and quantify the urban heat island (UHI) effect, crucial for environmental protection and public health.\nMethod:\nCalculate NDVI to assess the health and distribution of urban green spaces.\nAnalyze thermal infrared data to map surface temperature variations.\nPerform time-series analysis to detect trends and anomalies.\nOutcomes: The resulting data provide a scientific basis for urban greening initiatives and pollution control measures, directly supporting the policy goal of sustainable environmental management.\nB. Urban Planning and Land Use Change Objective: Inform urban planning by identifying patterns of land use change and urban sprawl.\nMethod:\nUse supervised classification techniques to differentiate between residential, commercial, industrial, and green areas.\nIncorporate change detection algorithms to monitor the evolution of the urban landscape over time.\nOutcomes: The classified land use maps and change detection results assist city planners in developing targeted policies for urban renewal and sustainable infrastructure development.\nC. Disaster Management and Emergency Response Objective: Enhance preparedness and response for natural disasters such as typhoons and flooding.\nMethod:\nUtilize near real-time satellite imagery to track weather patterns and rapidly update hazard maps.\nIntegrate remote sensing data with GIS-based emergency response systems.\nOutcomes: This integration improves early warning systems and guides effective emergency response strategies, minimizing risk to life and property.\n\n\n7.2.3 2.3 Policy Alignment and Impact\nThe applications described above are directly aligned with the objectives outlined in both national and local policies. For instance:\nThe “Regulations on the Application of Remote Sensing Satellites in China” emphasize data accuracy, timeliness, and transparency.\nThe “Shanghai Urban Planning Management Regulations” require up-to-date, scientifically validated data to inform zoning, land use, and disaster management decisions.\nRemote sensing technology thus becomes a critical enabler, ensuring that policy measures are based on reliable, real-time data and are adaptable to the dynamic urban environment.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week 4 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 4 diary.html#reflection-integrating-policy-urban-dynamics-and-data-driven-insights",
+    "href": "week 4 diary.html#reflection-integrating-policy-urban-dynamics-and-data-driven-insights",
+    "title": "6  week 4 study diary",
+    "section": "7.3 3. Reflection: Integrating Policy, Urban Dynamics, and Data-Driven Insights",
+    "text": "7.3 3. Reflection: Integrating Policy, Urban Dynamics, and Data-Driven Insights\n\n7.3.1 3.1 Knowledge Acquisition and Insights\nPolicy Integration: The study deepened my understanding of how rigorous policy frameworks can drive the adoption of advanced remote sensing techniques. I learned that policies are not merely regulatory documents but serve as strategic roadmaps that facilitate technological innovation.\nTechnical Mastery: The hands-on processing of multisource satellite data—ranging from atmospheric correction to land use classification—has significantly enhanced my technical skills. This practical experience underscores the transformative potential of remote sensing in urban management.\nUrban Challenges: By focusing on Shanghai, I observed firsthand the challenges posed by rapid urbanization: environmental degradation, loss of green space, and increasing vulnerability to natural disasters. These challenges necessitate a holistic approach that combines cutting-edge technology with sound policy.\n\n\n7.3.2 3.2 Future Directions and Recommendations\nTechnological Advancements: Emerging trends in AI and big data analytics promise to further refine remote sensing applications, making them more predictive and actionable. I plan to explore these avenues to enhance urban monitoring and disaster response systems.\nPolicy Evolution: Continuous collaboration between policymakers, technologists, and urban planners is essential. Policies must evolve to accommodate new technologies while ensuring data security, privacy, and equitable access.\nCross-disciplinary Integration: The successful implementation of remote sensing applications in urban contexts requires an integrated approach that combines insights from environmental science, urban planning, and information technology. Establishing a robust feedback mechanism between these disciplines will be key to sustained progress.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week 4 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 4 diary.html#reference-list",
+    "href": "week 4 diary.html#reference-list",
+    "title": "6  week 4 study diary",
+    "section": "7.4 Reference List",
+    "text": "7.4 Reference List\nJensen, J. R. (2015). Introductory Digital Image Processing: A Remote Sensing Perspective. Prentice Hall.\nSchulte, H., & colleagues. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849–865. https://doi.org/10.1111/2041-210X.13025\nRegulations on the Application of Remote Sensing Satellites in China. (n.d.). Retrieved from National Remote Sensing Center Website (Note: Update the URL and publication year if available.)\nShanghai Urban Planning Management Regulations. (n.d.). Retrieved from Shanghai Municipal Government Website (Note: Update the URL and publication year if available.)\nEuropean Space Agency. (n.d.). Sentinel missions. Retrieved from https://www.esa.int/Our_Activities/Observing_the_Earth/Sentinel-1\nUnited States Geological Survey. (n.d.). Landsat Satellite Imagery. Retrieved from https://landsat.usgs.gov\nNational Remote Sensing Center. (n.d.). Retrieved from http://www.nrscc.gov.cn",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week 4 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 6 diary.html",
+    "href": "week 6 diary.html",
+    "title": "8  week 6 diary",
+    "section": "",
+    "text": "9 Week 6 study diary",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week 6 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 6 diary.html#summary",
+    "href": "week 6 diary.html#summary",
+    "title": "8  week 6 diary",
+    "section": "9.1 Summary",
+    "text": "9.1 Summary\nThis week focused extensively on image classification using Sentinel-2 satellite data through Google Earth Engine (GEE). I learned to prepare and process satellite images specifically for land cover classification, beginning with loading vector data (FAO GAUL) to define the study area clearly—Shenzhen, in this case. I practiced data pre-processing, including cropping imagery to the region of interest and dealing with cloud coverage, which significantly affects data accuracy. Two distinct approaches to cloud masking were explored: filtering entire collections by low cloud cover percentages and applying pixel-based quality assurance masks.\nFurther, the practical work involved creating and managing training data for supervised classification models, particularly random forests. Through splitting datasets into training and test subsets, I could evaluate the classification accuracy, emphasizing the practical importance of methodological rigor in remote sensing projects. This reinforced the necessity of meticulous data handling to ensure accurate thematic mapping, crucial for applications in urban planning, environmental management, and disaster response.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week 6 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 6 diary.html#applications",
+    "href": "week 6 diary.html#applications",
+    "title": "8  week 6 diary",
+    "section": "9.2 Applications:",
+    "text": "9.2 Applications:\nRemote sensing image classification techniques, such as those explored this week, are widely applied in urban planning, agricultural monitoring, and environmental management. The Sentinel-2 satellite data, due to its accessibility and high spatial resolution, is extensively used in recent literature to study urban sprawl, land use change, and vegetation dynamics. For instance, Pal and Mather (2005) demonstrate the robustness of support vector machines in classifying remote sensing data, which provided context for understanding the comparative efficiency of random forests discussed in class.\nAdditionally, Jensen (2015) outlines the broader context of supervised and unsupervised classification methods, illustrating their practical applications in thematic map accuracy assessments. Recent advancements, highlighted in cloud-based remote sensing platforms like GEE (as discussed in the literature from GISGeography and Barsi et al.), underscore the transformative impact of cloud computing on image classification efficiency and scalability. This combination of theoretical understanding and practical application demonstrates the importance of selecting appropriate methods and data quality checks, especially cloud management, to achieve reliable classification results.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week 6 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 6 diary.html#reflection",
+    "href": "week 6 diary.html#reflection",
+    "title": "8  week 6 diary",
+    "section": "9.3 Reflection:",
+    "text": "9.3 Reflection:\nThis week’s practical experience significantly enhanced my understanding of the technical intricacies involved in remote sensing classification. I found particularly interesting how cloud cover, a seemingly minor detail, could drastically influence the outcomes of satellite imagery analyses. Learning practical solutions such as cloud masking significantly boosted my confidence in handling real-world satellite data challenges. Considering my future goals in urban sustainability, understanding these methodological challenges and capabilities is invaluable. Although Sentinel-2 data and classification techniques might not always directly apply, the general principles of careful data preparation and analysis I gained are broadly applicable. This week has solidified my appreciation for meticulous methodological planning in remote sensing projects.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week 6 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 8 diary.html",
+    "href": "week 8 diary.html",
+    "title": "10  week 8 diary",
+    "section": "",
+    "text": "11 week 8 study diary",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week 8 diary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nPal, M. and Mather, P.M., 2005. ‘Support vector machines for classification in remote sensing’, International Journal of Remote Sensing, 26(5), pp. 1007-1011.\nulder, M.A., Masek, J.G., Cohen, W.B., Loveland, T.R. and Woodcock, C.E., 2012. ‘Landsat continuity: Issues and opportunities for land cover monitoring’, Remote Sensing of Environment, 122, pp. 122-131.\nAllaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A. and Cheng, J., 2019. R Markdown: The Definitive Guide. Boca Raton, FL: Chapman and Hall/CRC.\nKnuth, D.E., 1984. Literate Programming. Stanford, CA: Center for the Study of Language and Information.\nWickham, H., 2014. Advanced R. Boca Raton, FL: Chapman and Hall/CRC.\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nJensen, J. R. (2015). Introductory Digital Image Processing: A Remote Sensing Perspective. Prentice Hall.\nSchulte, H., & colleagues. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849–865. https://doi.org/10.1111/2041-210X.13025\nRegulations on the Application of Remote Sensing Satellites in China. (n.d.). Retrieved from National Remote Sensing Center Website (Note: Update the URL and publication year if available.)\nShanghai Urban Planning Management Regulations. (n.d.). Retrieved from Shanghai Municipal Government Website (Note: Update the URL and publication year if available.)\nEuropean Space Agency. (n.d.). Sentinel missions. Retrieved from https://www.esa.int/Our_Activities/Observing_the_Earth/Sentinel-1\nUnited States Geological Survey. (n.d.). Landsat Satellite Imagery. Retrieved from https://landsat.usgs.gov\nNational Remote Sensing Center. (n.d.). Retrieved from http://www.nrscc.gov.cn\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nPal, M. and Mather, P.M., 2005. ‘Support vector machines for classification in remote sensing’, International Journal of Remote Sensing, 26(5), pp.1007–1011.\nFoody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.\nRichards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.\nLu, D. and Weng, Q., 2007. ‘A survey of image classification methods and techniques for improving classification performance’, International Journal of Remote Sensing, 28(5), pp.823–870.\nTso, B. and Mather, P.M., 2009. Classification Methods for Remotely Sensed Data. Boca Raton, FL: CRC Press.\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nRichards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.\nFoody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.\nVerbesselt, J., Hyndman, R., Newnham, G. and Culvenor, D., 2010. ‘Detecting trend and seasonal changes in satellite image time series’, Remote Sensing of Environment, 114(1), pp.106–115.\nLu, D. and Weng, Q., 2007. ‘A survey of image classification methods and techniques for improving classification performance’, International Journal of Remote Sensing, 28(5), pp.823–870.\nZhu, Z. and Woodcock, C.E., 2012. ‘Object-based cloud and cloud shadow detection in Landsat imagery’, Remote Sensing of Environment, 118, pp.83–94.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-book",
+    "href": "index.html#about-this-book",
+    "title": "Weekly Study diary",
+    "section": "1.1 About this Book",
+    "text": "1.1 About this Book\nThis book compiles my weekly learning diaries where I explore remote sensing, image classification, and other related topics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>My Learning Diary Book</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "week 2 diary.html",
+    "href": "week 2 diary.html",
+    "title": "4  week 2 diary",
+    "section": "",
+    "text": "4.1 Summary:\nIn Week 2, the program shifted from theoretical remote sensing fundamentals to the practical necessary instruments for documenting and reporting the learning process. This week, Quarto was the platform used for making a learning diary portfolio that was both interactive and reproducible. The lectures introduced the ideas of literate programming—a concept coined by Donald Knuth (1984)—which emphasizes the fluid dependence of code, narrative, and visualizations. I acquired the skills to initiate a Quarto project, understand its purposes using a _quarto.yml file, and most crucially structure the content into several chapters.\nDuring my time in the lab sessions, I learned how to use Markdown and insert YAML front matter to set metadata for my blog posts. I also played with inserting chunks of code, graphics, and interactive features into my documents. These approaches can be attributed to the tenets of reproducible research, which underscore the essentiality of careful recording and transparency in academic work (Allaire et al., 2019). Furthermore, the exercises included version control with Git, which allowed me to maintain order and facilitate my work through a sharing process—a very important skill set both for academic and professional levels.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>week 2 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 2 diary.html#applications",
+    "href": "week 2 diary.html#applications",
+    "title": "4  week 2 diary",
+    "section": "4.2 Applications:",
+    "text": "4.2 Applications:\nThe methods and approaches learned in Week 2 can be vital for both scholarly and occupational environments. The academic world, with the creation of Quarto with dynamic and interactive content, becomes an excellent tool to trace research progress and share results. Through the employment of code, data visualization, and storytelling explanations, those who do research can generate documents which are easy to reproduce and yet engaging. This practice will not only promote transparency of the research (Allaire et al., 2019) but also make collaboration more efficient through providing a linking space for updates and revisions.\nIn professional terms, the expertise acquired in Quarto is highly relevant to data science and technical documentation. A lot of companies may need thorough reports that are based both on the assessment conclusions and on clear visual communication. The functionality of multiple output formats (HTML, PDF, EPUB) allows flexibility in communications for changing audience groups. The adoption of version control tools such as Git will further reinforce the standard models of maintaining up-to-date and well documented abilities. These techniques (as per Wickham, 2014) allow technical reports to be sound, verifiable, and also easily comprehensible by stakeholders.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>week 2 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 2 diary.html#reflection",
+    "href": "week 2 diary.html#reflection",
+    "title": "4  week 2 diary",
+    "section": "4.3 Reflection:",
+    "text": "4.3 Reflection:\nWeek 2 has proven to immensely shift my mindset toward the way I perceive documentation and presentation. Quarto has provided me with a solid base for the development of a learning diary that has both interactive and narrative elements fitting together like pieces of a puzzle. Particularly remarkable was the process of joining code with descriptive texts, which decorated with a kind of tangible proof of the ideas of literate programming (Knuth, 1984) and reproducible research (Allaire, 2019). This week has provided me with tools which are helpful not only for improving my data presentation but also enhancing my critical thinking ability. I am eager to engage in the creation of polished, lively documents that can be shared with academic audiences and industry experts alike. All in all, this week has equipped me with knowledge, the application of which in the future would be of great impact to the way I do data analysis and communication.\n\n4.3.1 My Xaringan Presentation\nYou can view my xaringan presentation on GitHub Pages here.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>week 2 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 2 diary.html#reference",
+    "href": "week 2 diary.html#reference",
+    "title": "4  week 2 diary",
+    "section": "4.4 reference",
+    "text": "4.4 reference\nAllaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A. and Cheng, J., 2019. R Markdown: The Definitive Guide. Boca Raton, FL: Chapman and Hall/CRC.\nKnuth, D.E., 1984. Literate Programming. Stanford, CA: Center for the Study of Language and Information.\nWickham, H., 2014. Advanced R. Boca Raton, FL: Chapman and Hall/CRC.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>week 2 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 5 diary.html",
+    "href": "week 5 diary.html",
+    "title": "7  Week 5 study diary",
+    "section": "",
+    "text": "8 Advanced Remote Sensing Correction and Enhancement Learning Diary (Week 5)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 5 diary.html#learning-objectives",
+    "href": "week 5 diary.html#learning-objectives",
+    "title": "7  Week 5 study diary",
+    "section": "8.1 1. Learning Objectives",
+    "text": "8.1 1. Learning Objectives\n\nTheoretical Understanding:\n\nDeeply understand the principles behind Dark Object Subtraction (DOS) for atmospheric correction.\n\nGrasp the conversion process from Digital Number (DN) to radiance and then to apparent (or bottom-of-atmosphere) reflectance, including key parameters like solar zenith angle and Earth–Sun distance.\n\nData Pre-processing:\n\nMaster reading and processing Landsat data using R packages such as terra, RStoolbox, and tidyverse.\n\nLearn advanced techniques like image mosaicking, cropping, and masking to create a uniform dataset for analysis.\n\nImage Enhancement & Analysis:\n\nApply spectral indices (e.g., NDVI) to highlight vegetation features.\n\nUse spatial filtering (e.g., Laplacian filter) and texture analysis (via GLCM) to extract additional information from the imagery.\n\nCombine spectral and texture data through data fusion and reduce dimensionality using PCA.\n\nExperimental Process:\n\nDocument my own experimental approach to processing, analyzing, and interpreting remote sensing data, and reflect on challenges and insights.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 5 diary.html#theoretical-background-formulas",
+    "href": "week 5 diary.html#theoretical-background-formulas",
+    "title": "7  Week 5 study diary",
+    "section": "8.2 2. Theoretical Background & Formulas",
+    "text": "8.2 2. Theoretical Background & Formulas\n\n8.2.1 2.1 DOS Atmospheric Correction\nThe Dark Object Subtraction (DOS) method assumes that the darkest pixel in an image should ideally have zero reflectance. In practice, due to atmospheric scattering, even the darkest areas exhibit a small non-zero value (typically approximated as 1% reflectance). The correction formula is:\n\\[\n\\rho_{\\lambda} = \\frac{(L_{\\text{sat}} - L_{\\text{haze1\\%}}) \\cdot \\pi \\cdot d^2}{ESUN_{\\lambda} \\cdot \\cos \\theta_S \\cdot TAUv + TAUz}\n\\]\nWhere:\n- (L_{}) is the at-sensor radiance.\n- (L_{}) is the radiance attributable to atmospheric haze (estimated using the darkest pixel minus 1% reflectance).\n- (ESUN_{}) is the exoatmospheric solar irradiance for the band.\n- (d) is the Earth–Sun distance.\n- (_S) is the solar zenith angle.\n- (TAUv) and (TAUz) are sensor-specific calibration coefficients (often set as 1 and (_S), respectively).\n\n\n8.2.2 2.2 NDVI Computation\nThe Normalized Difference Vegetation Index (NDVI) is computed to assess vegetation cover and health:\n\\[\nNDVI = \\frac{NIR - Red}{NIR + Red}\n\\]\nFor Landsat 8, Band 5 represents the Near-Infrared (NIR) and Band 4 the Red spectral region.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 5 diary.html#experimental-process-code-implementation",
+    "href": "week 5 diary.html#experimental-process-code-implementation",
+    "title": "7  Week 5 study diary",
+    "section": "8.3 3. Experimental Process & Code Implementation",
+    "text": "8.3 3. Experimental Process & Code Implementation\nIn my experiment, I performed the following steps:\n\n8.3.1 3.1 Data Reading & Atmospheric Correction\nI began by loading a Landsat 8 scene and its associated MTL file, then applied the DOS correction using R.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 5 diary.html#part-4",
+    "href": "week 5 diary.html#part-4",
+    "title": "7  Week 5 study diary",
+    "section": "8.4 Part 4:",
+    "text": "8.4 Part 4:\nReflection and Future Work Reflection Workflow Integration: This exercise demonstrates the integration of cloud-based data export from GEE with local processing in R. Although I lacked the standard metadata file, I adapted by manually defining calibration parameters and using a custom DOS correction function.\nChallenges: The main challenge was handling the absence of the standard MTL file. This required manually specifying parameters, which may not be as precise as using a fully calibrated MTL file.\nLessons Learned: Always verify that the file paths and metadata requirements match the function expectations. When metadata is missing, a manual workaround is possible but requires careful validation.\nFuture Work Refinement: I plan to compare my custom correction results with those obtained using a full MTL file (if available) to refine the parameter settings.\nAdvanced Analysis: Further analysis, such as computing NDVI for vegetation monitoring and incorporating time-series data, will be explored.\nAutomation: Automating the process (e.g., integrating Earth Engine exports with local R processing via scripts) will be a goal for future improvements.\nConclusion This chapter has documented my workflow for processing Landsat 8 Surface Reflectance data without a standard MTL file, using a custom DOS correction method in R. The approach shows how to manually handle calibration parameters and adapt processing workflows when metadata is not available. I look forward to refining these techniques and incorporating more advanced analyses in future work. —",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 5 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 1 diary.html",
+    "href": "week 1 diary.html",
+    "title": "3  week 1 diary",
+    "section": "",
+    "text": "4 Week 1 Learning Diary",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 1 diary.html#summary",
+    "href": "week 1 diary.html#summary",
+    "title": "3  week 1 diary",
+    "section": "4.1 Summary:",
+    "text": "4.1 Summary:\nThe first week sent me on a path toward understanding the basic principles of remote sensing, which somewhat focuses on the physical concepts underlying the propagation and scattering of electromagnetic waves by the surface first. During the classes, we discussed the electromagnetic spectrum and how different sensors have the ability to detect data at various wavelengths. Through that lecture, conceptual clarity on terms like spatial, spectral, and temporal resolution, which are very important in understanding image quality and the process of data interpretation and analysis. For example, Lillesand et al. (2015) state that when choosing the characteristics of a sensor, there are different possibilities of information that can be obtained from an image.\nIn the other sessions, I got the chance to learn about satellite platforms like Landsat, Sentinel, and MODIS. The actual practice included basic image processing work, like enhancing some multispectral images and making some rudimentary radiometric corrections. This approach emphasized that data pre-processing is of great necessity, as it is a vital step in ensuring that what you have built your analysis on is very reliable (as emphasized by Jensen, 2015). In general, the tings that were covered within the week are of huge importance as they form the background knowledge necessary for practical and theoretical applications in the coming weeks.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 1 diary.html#application",
+    "href": "week 1 diary.html#application",
+    "title": "3  week 1 diary",
+    "section": "4.2 Application",
+    "text": "4.2 Application\nBoth the theoretical and practical skills learned during Week 1 have important uses that cut across many fields. In environmental monitoring, the help of remote sensing is invaluable, as it assists in the tracing of deforestation, the monitoring of water quality, and the study of land cover. Landsat images, among others, have been used in the quantification of forest degradation over time, which consequently boosts reforestation policies (Wulder et al., 2012). In addition, the capabilities of processing satellite data open the doors to determining the health of various ecosystems, which is very helpful for the long-term management of natural resources. Through these applications, it is clear that remote sensing information is crucial for formulating the right environmental assessments and policies.\nIn an urban setting, the concepts learned are equally important. The availability of high-resolution satellite images has planners map sprawl in urban settings and track infrastructure development. Research has shown the combination of multispectral images with GIS leads to increases in classification accuracy in urban land use mapping (Pal & Mather, 2005). The combination of remote sensing and urban planning not only with information that leads to proper decisions but also plays an important role in building sustainable cities. From this literature, I consider having integrated these ideas into my learning, and thus I have come to understand that remote sensing practices have more cross-concentrating applications that call on the combination of technical and socioeconomic variables.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 1 diary.html#reflection",
+    "href": "week 1 diary.html#reflection",
+    "title": "3  week 1 diary",
+    "section": "4.3 Reflection:",
+    "text": "4.3 Reflection:\nConsidering the first week, I have nothing but positive feelings in terms of my journey into the world of remote sensing. Through the exposure to the practice and theory, my understanding of the matter has been elaborated in a significant way. I was amazed to figure out that all the elementary concepts, which are often neglected, have an integral role to play in the image interpretation and analysis practices. The blending of the values learned from the texts (e.g., Jensen, 2015; Lillesand et al., 2015) has emphasized the use of first-hand knowledge when it comes to the navigation of complex data environments. In the future, I look forward to further this knowledge of mine and get to know more advanced data analysis techniques, which will certainly be based on the right guidance from the initial knowledge on the subject.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 1 diary.html#reference",
+    "href": "week 1 diary.html#reference",
+    "title": "3  week 1 diary",
+    "section": "4.4 Reference:",
+    "text": "4.4 Reference:\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nPal, M. and Mather, P.M., 2005. ‘Support vector machines for classification in remote sensing’, International Journal of Remote Sensing, 26(5), pp. 1007-1011.\nulder, M.A., Masek, J.G., Cohen, W.B., Loveland, T.R. and Woodcock, C.E., 2012. ‘Landsat continuity: Issues and opportunities for land cover monitoring’, Remote Sensing of Environment, 122, pp. 122-131.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 8 diary.html#summary",
+    "href": "week 8 diary.html#summary",
+    "title": "10  week 8 diary",
+    "section": "11.1 Summary",
+    "text": "11.1 Summary\nIn the 8th week of studying, I was concentrating on the advanced change detection and time series analysis as provided by remote sensing. Having earlier learned about image classification and preprocessing, I proceeded with my studies of the techniques for the detection of land-cover change and its quantification in time. I have become familiar with methods like post-classification comparison, direct image differencing, and thresholding, and I utilized these techniques in analyzing datasets acquired through the satellites like Landsat and Sentinel. Alongside this, I created NDVI time series and undertook k-fold cross-validation in order to check the stability of change detection models during our labs. The lectures also highlighted the fact that robust preprocessing, incorporating the processes of radiometric calibration, geometric rectification, and atmospheric correction, are vital for the reliable temporal analysis (Jensen, 2015; Lillesand, Kiefer, and Chipman, 2015). Such practical assignments taught me how slight alterations in vegetation from one season to the next, as well as changes in urban development over many years, are revealed through the study of satellite imagery. This week particularly highlights that integrating a number of different data sources and firm validation before interpreting results can help in improving the quality of change detection results.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week 8 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 8 diary.html#applications",
+    "href": "week 8 diary.html#applications",
+    "title": "10  week 8 diary",
+    "section": "11.2 Applications",
+    "text": "11.2 Applications\nThe methods and techniques that were practiced in week 8 have a huge number of applications, which are spread out in multiple fields. Change detection is a very important factor of environmental monitoring, as it allows us to track deforestation, see the variability of water resources, and study the effects of climate change on ecosystems (Richards, 2013; Foody, 2004). For example, by using NDVI time series data, scientists may ascribe vegetation health changes at a specified period of time, which could help monitor sustainable agriculture as well as wildlife management. Within the urban planning field, identification of the changes in land cover will help urban planners to observe the urban sprawl patterns and know where to build civic services as well as take actions to avoid disasters (Verbesselt et al., 2010). Furthermore, data from many sensors can be integrated so that the analysis will be as reliable as the view of the land cover will be comprehensive. Risk assessment in disaster management is supported via these new analysis methods by locating places of quick changes caused by natural hazards. All in all, the competencies acquired this week enable practitioners to deliver more precise, trustworthy, and applicable information for policy-making and scientific research.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week 8 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 8 diary.html#reflection",
+    "href": "week 8 diary.html#reflection",
+    "title": "10  week 8 diary",
+    "section": "11.3 Reflection",
+    "text": "11.3 Reflection\nAfter looking back at Week 8, I understand that it is difficult to overcome the issue of temporal changes, which brings along both hardships along with prospects for remote sensing. The experience with multi-temporal datasets was really beneficial, as it helped me improve my skills in preprocessing, change detection, and the validation of models for the future. The thing I learned is that the tiniest mistake in the calibration process and misalignment between pictures can result in huge inconsistencies in the outcome. This issue has been a reinforcement of the need for care in data handling and by using sound methods of evaluation. I feel that I am ready to experiment these approaches within the real environment for the purposes of wildlife conservation, city planning, and even crisis management. In the end, the study of temporal analysis in remote sensing during Week 8 not only established a deeper level of knowledge, but it also encouraged me to strive to master these methods in my upcoming tasks.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week 8 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 8 diary.html#references",
+    "href": "week 8 diary.html#references",
+    "title": "10  week 8 diary",
+    "section": "11.4 References",
+    "text": "11.4 References\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nRichards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.\nFoody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.\nVerbesselt, J., Hyndman, R., Newnham, G. and Culvenor, D., 2010. ‘Detecting trend and seasonal changes in satellite image time series’, Remote Sensing of Environment, 114(1), pp.106–115.\nLu, D. and Weng, Q., 2007. ‘A survey of image classification methods and techniques for improving classification performance’, International Journal of Remote Sensing, 28(5), pp.823–870.\nZhu, Z. and Woodcock, C.E., 2012. ‘Object-based cloud and cloud shadow detection in Landsat imagery’, Remote Sensing of Environment, 118, pp.83–94.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week 8 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 7 diary.html",
+    "href": "week 7 diary.html",
+    "title": "9  week 7 diary",
+    "section": "",
+    "text": "10 Week 7 Learning Diary",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week 7 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 7 diary.html#summary",
+    "href": "week 7 diary.html#summary",
+    "title": "9  week 7 diary",
+    "section": "10.1 Summary:",
+    "text": "10.1 Summary:\nIn the seventh week of my studies, I learned about the advanced classification evaluation techniques and remote sensing image analysis optimization in particular. Continuing from the previous weeks’ topics on supervised classification methods, I pursued the practical implementation of accuracy assessment, confusion matrix analysis, and cross-validation strategies, all to attain the highest accuracy possible in the classification tasks. During our classes, the relevant lecture emphasized a valid classification output by accuracy metrics, including overall accuracy, user’s accuracy, and producer’s accuracy, indispensable for quantifying approximation reliability (Jensen, 2015; Lillesand, Kiefer, and Chipman, 2015). In lab sessions, I tried out various classifier parameters and sample sizes to figure out the trade-offs between the complexity of the model and overfitting. Utilizing methods such as k-fold cross-validation allowed me to thoroughly quantify the applicability of my models. Through these practices, it became clear that the importance of a sound basis on which to evaluate remote sensing analyses goes beyond validation: it also sheds light on preprocessing of data and feature selection.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week 7 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 7 diary.html#applications",
+    "href": "week 7 diary.html#applications",
+    "title": "9  week 7 diary",
+    "section": "10.2 Applications",
+    "text": "10.2 Applications\nThe methods explored in Week 7 are generally applicable across different things, from monitoring environmental changes, to urban planning, and resource management. Correctly estimating class accuracy is an example of that, which will help us in tracking the changes of land cover over time, helping to observe both deforestation and urban expansion (Pal and Mather, 2005). When it comes to environmental studies, radiometric and geometric corrections, with their reliability driven by intensive accuracy assessments, guarantee that remote sensing information will reflect on-ground conditions adequately, offering a sound support for trend analyses (Foody, 2004). Additionally, accurate classification will assist urban planners in making the deliberate choice of infrastructure and land-use planning, where even a small mistake can carry major economic and environmental consequences (Richards, 2013). Cross-validation is one of the advanced evaluation methods available that enables me to include various multi-source data for enhancing the overall performance of the analysis (Lu and Weng, 2007). Also, analytically coupling machine learning approaches with these techniques aids in automating the classification procedure for a wider range of contexts and datasets (Tso and Mather, 2009). By and large, comprehending the evaluation techniques provides a more valid basis for decision-making in academic research as well as in professional practice.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week 7 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 7 diary.html#reflection",
+    "href": "week 7 diary.html#reflection",
+    "title": "9  week 7 diary",
+    "section": "10.3 Reflection",
+    "text": "10.3 Reflection\nMy reflections for the week 7 lend me to think that the core of a remote sensing analysis is the validity of its results. However, the manipulation of confusion matrices and application of the cross-validation technique not only gave me the experience needed but taught me how to optimize the model in successive iterations. This is where I have come to realize that perhaps the most correct interpretation of satellite data could still fall prey to a tiny defect in these accuracy assessments. The combination of theoretical knowledge with practical experience has given me the tools to accurately assess the model classification performance. This is an invaluable skill that will undoubtedly benefit my future projects. The learning curve in this week was notably steep, and I can say with confidence that these improved analytical skills will come in very handy in my future research projects.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week 7 diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 3 diary.html#summary",
+    "href": "week 3 diary.html#summary",
+    "title": "5  week 3 study diary",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary\nBy the end of Week 3, I was able to identify and apply image enhancement and preprocessing methods, besides the techniques explored in the remote sensing analysis. I was introduced to concepts such as radiometric calibration, atmospheric correction, and geometric rectification, which are of great value regarding the construction of the central core for my studies. The mathematical models and empirical methods linking the sensors to atmospheric effects were presented in the lectures, where a focus was put on the sensor-oriented calibration. The results, corrected by the preprocessing, had to be compared from a reproducibility viewpoint. The enhancement methods I have implemented so far and have practiced with QGIS, which is one of the software programs for remote sensing.\nThese included histogram stretching and contrast adjustment, which were employed to improve the quality of the satellite images. Through these exercises, I gained a clear perception of how the preprocessing step turns the raw data into information that can be reliably used further for analyses. This week served to confirm the idea that there is no compromise in the data preparation, a fact that is very critical for remote sensing workflow.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week 3 study diary</span>"
+    ]
+  },
+  {
+    "objectID": "week 7 diary.html#references",
+    "href": "week 7 diary.html#references",
+    "title": "9  week 7 diary",
+    "section": "10.4 References",
+    "text": "10.4 References\nJensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.\nLillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.\nPal, M. and Mather, P.M., 2005. ‘Support vector machines for classification in remote sensing’, International Journal of Remote Sensing, 26(5), pp.1007–1011.\nFoody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.\nRichards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.\nLu, D. and Weng, Q., 2007. ‘A survey of image classification methods and techniques for improving classification performance’, International Journal of Remote Sensing, 28(5), pp.823–870.\nTso, B. and Mather, P.M., 2009. Classification Methods for Remotely Sensed Data. Boca Raton, FL: CRC Press.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week 7 diary</span>"
+    ]
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "3 Personal Introduction and Learning Objectives\nHello, I am Chuhui Tian, a student dedicated to the study and research of remote sensing and Geographic Information Systems (GIS). In this learning diary, I document my weekly learning experiences, practical experiments, and insights from literature reviews, aiming to build a comprehensive understanding of remote sensing analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "introduction.html#my-background",
+    "href": "introduction.html#my-background",
+    "title": "2  Introduction",
+    "section": "3.1 My Background",
+    "text": "3.1 My Background\nI have a background in UCL studying in Urban Spacial Sicence and am passionate about data analysis and spatial information technology. Remote sensing is an essential tool for environmental monitoring, urban planning, and resource management, offering precise data to support informed decision-making.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "introduction.html#learning-objectives",
+    "href": "introduction.html#learning-objectives",
+    "title": "2  Introduction",
+    "section": "3.2 Learning Objectives",
+    "text": "3.2 Learning Objectives\n\nTheoretical Mastery: Develop a systematic understanding of key concepts such as image processing, classification, and change detection.\nPractical Skills: Enhance my ability to process and analyze remote sensing data through hands-on experiments and case studies.\nLiterature Engagement: Read and critically evaluate relevant literature to form a deep and unique perspective on remote sensing applications.\nKnowledge Sharing: Utilize the Quarto platform to create a dynamic, interactive learning diary that facilitates knowledge sharing and academic exchange.\n\nI hope this diary not only consolidates my knowledge but also serves as many resource for peers and others interested in remote sensing technology. Let’s learn and grow together!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]

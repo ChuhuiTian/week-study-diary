@@ -1,0 +1,33 @@
+---
+title: "week 7 diary"
+---
+
+# Week 7 Learning Diary
+
+## Summary:
+
+In the seventh week of my studies, I learned about the advanced classification evaluation techniques and remote sensing image analysis optimization in particular. Continuing from the previous weeks' topics on supervised classification methods, I pursued the practical implementation of accuracy assessment, confusion matrix analysis, and cross-validation strategies, all to attain the highest accuracy possible in the classification tasks. During our classes, the relevant lecture emphasized a valid classification output by accuracy metrics, including overall accuracy, user’s accuracy, and producer’s accuracy, indispensable for quantifying approximation reliability (Jensen, 2015; Lillesand, Kiefer, and Chipman, 2015). In lab sessions, I tried out various classifier parameters and sample sizes to figure out the trade-offs between the complexity of the model and overfitting. Utilizing methods such as k-fold cross-validation allowed me to thoroughly quantify the applicability of my models. Through these practices, it became clear that the importance of a sound basis on which to evaluate remote sensing analyses goes beyond validation: it also sheds light on preprocessing of data and feature selection.
+
+## Applications
+
+The methods explored in Week 7 are generally applicable across different things, from monitoring environmental changes, to urban planning, and resource management. Correctly estimating class accuracy is an example of that, which will help us in tracking the changes of land cover over time, helping to observe both deforestation and urban expansion (Pal and Mather, 2005). When it comes to environmental studies, radiometric and geometric corrections, with their reliability driven by intensive accuracy assessments, guarantee that remote sensing information will reflect on-ground conditions adequately, offering a sound support for trend analyses (Foody, 2004). Additionally, accurate classification will assist urban planners in making the deliberate choice of infrastructure and land-use planning, where even a small mistake can carry major economic and environmental consequences (Richards, 2013). Cross-validation is one of the advanced evaluation methods available that enables me to include various multi-source data for enhancing the overall performance of the analysis (Lu and Weng, 2007). Also, analytically coupling machine learning approaches with these techniques aids in automating the classification procedure for a wider range of contexts and datasets (Tso and Mather, 2009). By and large, comprehending the evaluation techniques provides a more valid basis for decision-making in academic research as well as in professional practice.
+
+## Reflection
+
+My reflections for the week 7 lend me to think that the core of a remote sensing analysis is the validity of its results. However, the manipulation of confusion matrices and application of the cross-validation technique not only gave me the experience needed but taught me how to optimize the model in successive iterations. This is where I have come to realize that perhaps the most correct interpretation of satellite data could still fall prey to a tiny defect in these accuracy assessments. The combination of theoretical knowledge with practical experience has given me the tools to accurately assess the model classification performance. This is an invaluable skill that will undoubtedly benefit my future projects. The learning curve in this week was notably steep, and I can say with confidence that these improved analytical skills will come in very handy in my future research projects.
+
+## References
+
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Pal, M. and Mather, P.M., 2005. 'Support vector machines for classification in remote sensing', International Journal of Remote Sensing, 26(5), pp.1007–1011.
+
+Foody, G.M., 2004. Uncertainty in Remote Sensing and GIS. Chichester, UK: Wiley.
+
+Richards, J.A., 2013. Remote Sensing Digital Image Analysis. 5th ed. Berlin: Springer.
+
+Lu, D. and Weng, Q., 2007. 'A survey of image classification methods and techniques for improving classification performance', International Journal of Remote Sensing, 28(5), pp.823–870.
+
+Tso, B. and Mather, P.M., 2009. Classification Methods for Remotely Sensed Data. Boca Raton, FL: CRC Press.

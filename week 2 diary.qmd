@@ -1,0 +1,31 @@
+---
+title: "week 2 diary"
+---
+
+## Summary:
+
+In Week 2, the program shifted from theoretical remote sensing fundamentals to the practical necessary instruments for documenting and reporting the learning process. This week, Quarto was the platform used for making a learning diary portfolio that was both interactive and reproducible. The lectures introduced the ideas of literate programming—a concept coined by Donald Knuth (1984)—which emphasizes the fluid dependence of code, narrative, and visualizations. I acquired the skills to initiate a Quarto project, understand its purposes using a \_quarto.yml file, and most crucially structure the content into several chapters.
+
+During my time in the lab sessions, I learned how to use Markdown and insert YAML front matter to set metadata for my blog posts. I also played with inserting chunks of code, graphics, and interactive features into my documents. These approaches can be attributed to the tenets of reproducible research, which underscore the essentiality of careful recording and transparency in academic work (Allaire et al., 2019). Furthermore, the exercises included version control with Git, which allowed me to maintain order and facilitate my work through a sharing process—a very important skill set both for academic and professional levels.
+
+## Applications:
+
+The methods and approaches learned in Week 2 can be vital for both scholarly and occupational environments. The academic world, with the creation of Quarto with dynamic and interactive content, becomes an excellent tool to trace research progress and share results. Through the employment of code, data visualization, and storytelling explanations, those who do research can generate documents which are easy to reproduce and yet engaging. This practice will not only promote transparency of the research (Allaire et al., 2019) but also make collaboration more efficient through providing a linking space for updates and revisions.
+
+In professional terms, the expertise acquired in Quarto is highly relevant to data science and technical documentation. A lot of companies may need thorough reports that are based both on the assessment conclusions and on clear visual communication. The functionality of multiple output formats (HTML, PDF, EPUB) allows flexibility in communications for changing audience groups. The adoption of version control tools such as Git will further reinforce the standard models of maintaining up-to-date and well documented abilities. These techniques (as per Wickham, 2014) allow technical reports to be sound, verifiable, and also easily comprehensible by stakeholders.
+
+## Reflection:
+
+Week 2 has proven to immensely shift my mindset toward the way I perceive documentation and presentation. Quarto has provided me with a solid base for the development of a learning diary that has both interactive and narrative elements fitting together like pieces of a puzzle. Particularly remarkable was the process of joining code with descriptive texts, which decorated with a kind of tangible proof of the ideas of literate programming (Knuth, 1984) and reproducible research (Allaire, 2019). This week has provided me with tools which are helpful not only for improving my data presentation but also enhancing my critical thinking ability. I am eager to engage in the creation of polished, lively documents that can be shared with academic audiences and industry experts alike. All in all, this week has equipped me with knowledge, the application of which in the future would be of great impact to the way I do data analysis and communication. 
+
+### My Xaringan Presentation
+
+You can view my xaringan presentation on GitHub Pages [here](https://chuhuitian.github.io/my-xaringan-presentation/).
+
+## reference
+
+Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A. and Cheng, J., 2019. R Markdown: The Definitive Guide. Boca Raton, FL: Chapman and Hall/CRC.
+
+Knuth, D.E., 1984. Literate Programming. Stanford, CA: Center for the Study of Language and Information.
+
+Wickham, H., 2014. Advanced R. Boca Raton, FL: Chapman and Hall/CRC.

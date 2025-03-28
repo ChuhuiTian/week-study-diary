@@ -1,0 +1,16 @@
+---
+title: "My Learning Diary Book"
+author: "Chuhui Tian"
+time: "2025/02/11"
+---
+# Welcome
+
+Welcome to my Weekly Study Diary!  
+This book chronicles my learning journey in the fields of remote sensing and Geographic Information Systems (GIS), featuring weekly theoretical summaries, practical applications, and personal reflections.
+
+Please use the navigation sidebar or the links below to explore the chapters and learn more about each week's content. If you are interested in a specific topic, feel free to click on the corresponding diary entry.
+
+
+## About this Book
+
+This book compiles my weekly learning diaries where I explore remote sensing, image classification, and other related topics.

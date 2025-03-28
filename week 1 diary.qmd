@@ -1,0 +1,30 @@
+---
+title: "week 1 diary"
+---
+# Week 1 Learning Diary
+
+## Summary:
+
+The first week sent me on a path toward understanding the basic principles of remote sensing, which somewhat focuses on the physical concepts underlying the propagation and scattering of electromagnetic waves by the surface first. During the classes, we discussed the electromagnetic spectrum and how different sensors have the ability to detect data at various wavelengths. Through that lecture, conceptual clarity on terms like spatial, spectral, and temporal resolution, which are very important in understanding image quality and the process of data interpretation and analysis. For example, Lillesand et al. (2015) state that when choosing the characteristics of a sensor, there are different possibilities of information that can be obtained from an image.
+
+In the other sessions, I got the chance to learn about satellite platforms like Landsat, Sentinel, and MODIS. The actual practice included basic image processing work, like enhancing some multispectral images and making some rudimentary radiometric corrections. This approach emphasized that data pre-processing is of great necessity, as it is a vital step in ensuring that what you have built your analysis on is very reliable (as emphasized by Jensen, 2015). In general, the tings that were covered within the week are of huge importance as they form the background knowledge necessary for practical and theoretical applications in the coming weeks.
+
+## Application
+
+Both the theoretical and practical skills learned during Week 1 have important uses that cut across many fields. In environmental monitoring, the help of remote sensing is invaluable, as it assists in the tracing of deforestation, the monitoring of water quality, and the study of land cover. Landsat images, among others, have been used in the quantification of forest degradation over time, which consequently boosts reforestation policies (Wulder et al., 2012). In addition, the capabilities of processing satellite data open the doors to determining the health of various ecosystems, which is very helpful for the long-term management of natural resources. Through these applications, it is clear that remote sensing information is crucial for formulating the right environmental assessments and policies.
+
+In an urban setting, the concepts learned are equally important. The availability of high-resolution satellite images has planners map sprawl in urban settings and track infrastructure development. Research has shown the combination of multispectral images with GIS leads to increases in classification accuracy in urban land use mapping (Pal & Mather, 2005). The combination of remote sensing and urban planning not only with information that leads to proper decisions but also plays an important role in building sustainable cities. From this literature, I consider having integrated these ideas into my learning, and thus I have come to understand that remote sensing practices have more cross-concentrating applications that call on the combination of technical and socioeconomic variables.
+
+## Reflection:
+
+Considering the first week, I have nothing but positive feelings in terms of my journey into the world of remote sensing. Through the exposure to the practice and theory, my understanding of the matter has been elaborated in a significant way. I was amazed to figure out that all the elementary concepts, which are often neglected, have an integral role to play in the image interpretation and analysis practices. The blending of the values learned from the texts (e.g., Jensen, 2015; Lillesand et al., 2015) has emphasized the use of first-hand knowledge when it comes to the navigation of complex data environments. In the future, I look forward to further this knowledge of mine and get to know more advanced data analysis techniques, which will certainly be based on the right guidance from the initial knowledge on the subject.
+
+## Reference:
+
+Jensen, J.R., 2015. Introductory Digital Image Processing: A Remote Sensing Perspective. 4th ed. Upper Saddle River, NJ: Prentice Hall.
+
+Lillesand, T., Kiefer, R.W. and Chipman, J., 2015. Remote Sensing and Image Interpretation. 7th ed. Hoboken, NJ: Wiley.
+
+Pal, M. and Mather, P.M., 2005. 'Support vector machines for classification in remote sensing', International Journal of Remote Sensing, 26(5), pp. 1007-1011.
+
+ulder, M.A., Masek, J.G., Cohen, W.B., Loveland, T.R. and Woodcock, C.E., 2012. 'Landsat continuity: Issues and opportunities for land cover monitoring', Remote Sensing of Environment, 122, pp. 122-131.
