@@ -22,11 +22,9 @@ bibliography: references.bib
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-  pdf:
-    documentclass: scrreprt
+    toc: true
+    number-sections: true
+    theme: cosmo
 
 editor: visual
 
