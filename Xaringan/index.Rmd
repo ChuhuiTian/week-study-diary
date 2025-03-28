@@ -17,7 +17,12 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-
+```{r create_nojekyll, include=FALSE}
+# 检查当前工作目录是否已有 .nojekyll 文件，没有则创建
+if (!file.exists(".nojekyll")) {
+  file.create(".nojekyll")
+}
+```
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
