@@ -7,15 +7,14 @@ book:
   date: "2025/2/16"
   chapters:
     - index.qmd
-    - introduction.qmd
-    - "week 1 diary.qmd"
-    - "week 2 diary.qmd"
-    - "week 3 diary.qmd"
-    - "week 4 diary.qmd"
-    - "week 5 diary.qmd"
-    - "week 6 diary.qmd"
-    - "week 7 diary.qmd"
-    - "week 8 diary.qmd"
+    - week-1-diary.qmd
+    - week-2-diary.qmd
+    - week-3-diary.qmd
+    - week-4-diary.qmd
+    - week-5-diary.qmd
+    - week-6-diary.qmd
+    - week-7-diary.qmd
+    - week-8-diary.qmd
     - references.qmd
 
 bibliography: references.bib

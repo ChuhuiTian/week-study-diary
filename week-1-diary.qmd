@@ -1,6 +1,7 @@
 ---
 title: "week 1 diary"
 ---
+
 # Week 1 Learning Diary
 
 ## Summary:
