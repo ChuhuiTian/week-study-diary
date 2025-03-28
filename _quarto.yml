@@ -4,7 +4,7 @@ project:
 book:
   title: "Weekly Study diary"
   author: "Chuhui Tian"
-  date: "2025/2/17"
+  date: "2025/2/16"
   chapters:
     - index.qmd
     - introduction.qmd
