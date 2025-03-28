@@ -76,4 +76,4 @@ Advanced Analysis: Further analysis, such as computing NDVI for vegetation monit
 
 Automation: Automating the process (e.g., integrating Earth Engine exports with local R processing via scripts) will be a goal for future improvements.
 
-Conclusion This chapter has documented my workflow for processing Landsat 8 Surface Reflectance data without a standard MTL file, using a custom DOS correction method in R. The approach shows how to manually handle calibration parameters and adapt processing workflows when metadata is not available. I look forward to refining these techniques and incorporating more advanced analyses in future work. ---
+Conclusion This chapter has documented my workflow for processing Landsat 8 Surface Reflectance data without a standard MTL file, using a custom DOS correction method in R. The approach shows how to manually handle calibration parameters and adapt processing workflows when metadata is not available. I look forward to refining these techniques and incorporating more advanced analyses in future work.
